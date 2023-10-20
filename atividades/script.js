@@ -8,9 +8,18 @@ ola("Alysson", "Lima", 33)
 
 // function soma(){
 //     num3 = num1 + num2
+//     num4 = num1 - num2
+//     num5 = num1 / num2
+//     num6 = num1 * num2
 //     console.log(num3)
 //     alert(`O resultado da soma é ${num3}`)
+//     alert(`O resultado da subtração é ${num4}`)
+//     alert(`O resultado da divisão é ${num5}`)
+//     alert(`O resultado da multiplicação é ${num6}`)
 //     console.log(`O resultado da soma é ${num3}`)
+//     console.log(`O resultado da subtração é ${num4}`)
+//     console.log(`O resultado da divisão é ${num5}`)
+//     console.log(`O resultado da multiplicação é ${num6}`)
 // }
 // var num1 = Number(window.prompt("Digite o 1º numero:", ""));
 // var num2 = Number(window.prompt("Digite o 2º numero:", ""));
@@ -48,4 +57,30 @@ ola("Alysson", "Lima", 33)
 // }
 // var numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
 // cont()
+
+// -------------------------------------------------
+
+const frutas = []
+frutas.length = 3
+
+function addFrutas(){
+    frutas.push(addfruta)
+}
+
+var addfruta = window.prompt("Qual fruta você quer adicionar?")
+addFrutas()
+console.log(frutas)
+var addfruta = window.prompt("Qual fruta você quer adicionar?")
+addFrutas()
+console.log(frutas)
+var addfruta = window.prompt("Qual fruta você quer adicionar?")
+addFrutas()
+alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`)
+console.log(frutas)
+for (fruta of frutas){
+    console.log(fruta)
+}
+    
+
+
 
