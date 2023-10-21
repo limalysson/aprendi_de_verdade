@@ -4,7 +4,7 @@ function ola(nome, sobrenome, idade){
 }
 ola("Alysson", "Lima", 33)
 
-// ----------------------------------------------------
+// --------------------------------------------------------------------------------
 
 // function soma(){
 //     num3 = num1 + num2
@@ -25,7 +25,7 @@ ola("Alysson", "Lima", 33)
 // var num2 = Number(window.prompt("Digite o 2º numero:", ""));
 // soma()
 
-// ------------------------------------
+// --------------------------------------------------------------------------------
 
 // let dataAtual = new Date();
 
@@ -45,7 +45,7 @@ ola("Alysson", "Lima", 33)
 // var idadeDigitada = window.prompt("Digite seu ano de nascimento!");
 // calculaIdade(idadeDigitada)
 
-// -----------------------------------------------
+// --------------------------------------------------------------------------------
 
 // function cont(){
 //     numInit = 0
@@ -58,35 +58,57 @@ ola("Alysson", "Lima", 33)
 // var numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
 // cont()
 
-// -------------------------------------------------
+// --------------------------------------------------------------------------------
 
-const frutas = [] 
+// const frutas = [] 
 
   
- function addFrutas(){ 
-     frutas.push(addfruta) 
- } 
+//  function addFrutas(){ 
+//      frutas.push(addfruta) 
+//  } 
   
- var addfruta = window.prompt("Qual fruta você quer adicionar?") 
- addFrutas() 
- var addfruta = window.prompt("Qual fruta você quer adicionar?") 
- addFrutas() 
- var addfruta = window.prompt("Qual fruta você quer adicionar?") 
- addFrutas() 
+//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+//  addFrutas() 
+//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+//  addFrutas() 
+//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+//  addFrutas() 
  
- alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`) 
+//  alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`) 
  
-//------------------------------------------------------------------------------------------
-var frutas = [];
+// --------------------------------------------------------------------------------
 
-function addFrutas(){ 
-  for(let i = 1; i <= 3; i++) {
-    let fruta = window.prompt(`Digite a fruta de numero ${i}`);
-    frutas.push(fruta);
-  }
-  alert(`Você adicionou ${frutas.join()} a sua lista.`) ;
-} 
-addFrutas();
+// var frutas = [];
 
+// function addFrutas(){ 
+//   for(let i = 1; i <= 3; i++) {
+//     let fruta = window.prompt(`Digite a fruta de numero ${i}`);
+//     frutas.push(fruta);
+//   }
+//   alert(`Você adicionou ${frutas.join(", ")} a sua lista.`) ;
+// } 
+// addFrutas();
 
+// --------------------------------------------------------------------------------
+
+// var livro = new Object();
+// livro.titulo = "Apenas um livro qualquer";
+// livro.autor = "Matusalem";
+// livro.paginas = 20;
+
+// console.log(livro.titulo)
+// console.log(livro.autor)
+// console.log(livro.paginas)
+
+// --------------------------------------------------------------------------------
+
+document.getElementById("meuBotao").addEventListener("click", function(){alert("Voce clicou no botão!");});
+
+// ------ Ou pode chamar a função no onclick.
+
+function exibirAlerta(){
+    alert("Você clicou no botão!");
+}
+
+// --------------------------------------------------------------------------------
 
