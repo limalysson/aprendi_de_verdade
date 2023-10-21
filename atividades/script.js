@@ -60,27 +60,33 @@ ola("Alysson", "Lima", 33)
 
 // -------------------------------------------------
 
-const frutas = []
-frutas.length = 3
+const frutas = [] 
 
-function addFrutas(){
-    frutas.push(addfruta)
-}
+  
+ function addFrutas(){ 
+     frutas.push(addfruta) 
+ } 
+  
+ var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+ addFrutas() 
+ var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+ addFrutas() 
+ var addfruta = window.prompt("Qual fruta você quer adicionar?") 
+ addFrutas() 
+ 
+ alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`) 
+ 
+//------------------------------------------------------------------------------------------
+var frutas = [];
 
-var addfruta = window.prompt("Qual fruta você quer adicionar?")
-addFrutas()
-console.log(frutas)
-var addfruta = window.prompt("Qual fruta você quer adicionar?")
-addFrutas()
-console.log(frutas)
-var addfruta = window.prompt("Qual fruta você quer adicionar?")
-addFrutas()
-alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`)
-console.log(frutas)
-for (fruta of frutas){
-    console.log(fruta)
-}
-    
+function addFrutas(){ 
+  for(let i = 1; i <= 3; i++) {
+    let fruta = window.prompt(`Digite a fruta de numero ${i}`);
+    frutas.push(fruta);
+  }
+  alert(`Você adicionou ${frutas.join()} a sua lista.`) ;
+} 
+addFrutas();
 
 
 
