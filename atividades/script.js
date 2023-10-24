@@ -1,80 +1,97 @@
-function ola(nome, sobrenome, idade){
-    console.log(`Olá, meu nome é ${nome} ${sobrenome}, tenho ${idade} anos.`)
+function ola(){
+    let nome = "Alysson";
+    let sobrenome = "Lima";
+    let idade = 33;
+    console.log(`Olá, meu nome é ${nome} ${sobrenome}, tenho ${idade} anos.`);
+    alert(`Olá, meu nome é ${nome} ${sobrenome}, tenho ${idade} anos.`);
 
 }
-ola("Alysson", "Lima", 33)
+
 
 // --------------------------------------------------------------------------------
 
-// function soma(){
-//     num3 = num1 + num2
-//     num4 = num1 - num2
-//     num5 = num1 / num2
-//     num6 = num1 * num2
-//     console.log(num3)
-//     alert(`O resultado da soma é ${num3}`)
-//     alert(`O resultado da subtração é ${num4}`)
-//     alert(`O resultado da divisão é ${num5}`)
-//     alert(`O resultado da multiplicação é ${num6}`)
-//     console.log(`O resultado da soma é ${num3}`)
-//     console.log(`O resultado da subtração é ${num4}`)
-//     console.log(`O resultado da divisão é ${num5}`)
-//     console.log(`O resultado da multiplicação é ${num6}`)
-// }
-// var num1 = Number(window.prompt("Digite o 1º numero:", ""));
-// var num2 = Number(window.prompt("Digite o 2º numero:", ""));
-// soma()
+function soma(){
+    let num1 = Number(window.prompt("Digite o 1º numero:", ""));
+    let num2 = Number(window.prompt("Digite o 2º numero:", ""));
+    num3 = num1 + num2
+        console.log(num3)    
+    alert(`O resultado da soma é ${num3}`)
+    console.log(`O resultado da soma é ${num3}`)
+}
+function subtracao(){
+    let num1 = Number(window.prompt("Digite o 1º numero:", ""));
+    let num2 = Number(window.prompt("Digite o 2º numero:", ""));
+    num4 = num1 - num2
+    alert(`O resultado da subtração é ${num4}`)
+    console.log(`O resultado da subtração é ${num4}`)
+}
+function div(){
+    let num1 = Number(window.prompt("Digite o 1º numero:", ""));
+    let num2 = Number(window.prompt("Digite o 2º numero:", ""));
+    num5 = num1 / num2
+    alert(`O resultado da divisão é ${num5}`)
+    console.log(`O resultado da divisão é ${num5}`)
+}
+function mult(){
+    let num1 = Number(window.prompt("Digite o 1º numero:", ""));
+    let num2 = Number(window.prompt("Digite o 2º numero:", ""));
+    num6 = num1 * num2
+    alert(`O resultado da multiplicação é ${num6}`)
+    console.log(`O resultado da multiplicação é ${num6}`)
+}
+
 
 // --------------------------------------------------------------------------------
 
-// let dataAtual = new Date();
+let dataAtual = new Date();
 
-// function calculaIdade(idade)
-// {
-//   let anoAtual = dataAtual.getFullYear();
-//   let idadeCalculada = anoAtual - idade;
-//   if (idadeCalculada < 18){
-//     console.log(`Você tem ${idadeCalculada} anos, logo você é menor de idade.`)
-//     alert(`Você tem ${idadeCalculada} anos, logo você é menor de idade.`)
-//     } else {
-//     console.log(`Você tem ${idadeCalculada} anos, logo você é maior de idade.`)
-//     alert(`Você tem ${idadeCalculada} anos, logo você é maior de idade.`)
-//     }
-//   }
-
-// var idadeDigitada = window.prompt("Digite seu ano de nascimento!");
-// calculaIdade(idadeDigitada)
+function calculaIdade()
+{   
+    var idade = window.prompt("Digite seu ano de nascimento!");
+  let anoAtual = dataAtual.getFullYear();
+  let idadeCalculada = anoAtual - idade;
+  if (idadeCalculada < 18){
+    console.log(`Você tem ${idadeCalculada} anos, logo você é menor de idade.`)
+    alert(`Você tem ${idadeCalculada} anos, logo você é menor de idade.`)
+    } else {
+    console.log(`Você tem ${idadeCalculada} anos, logo você é maior de idade.`)
+    alert(`Você tem ${idadeCalculada} anos, logo você é maior de idade.`)
+    }
+  }
 
 // --------------------------------------------------------------------------------
 
-// function cont(){
-//     numInit = 0
-//     while (numInit < numFim) {
-//         console.log(numInit)
-//         numInit = numInit + 1
-//     }
-//     console.log(numInit)
-// }
-// var numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
-// cont()
+function cont(){
+    numInit = 0
+    var numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
+        if (numFim <= 1){
+            alert("Digite um numero válido.")
+        } else {
+            while (numInit < numFim) {
+            console.log(numInit)
+            numInit = numInit + 1
+    }}
+    console.log(numInit)
+    
+    alert("Da uma olhada no console")
+}
+
+
 
 // --------------------------------------------------------------------------------
 
-// const frutas = [] 
-
+const frutas = [] 
   
-//  function addFrutas(){ 
-//      frutas.push(addfruta) 
-//  } 
-  
-//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
-//  addFrutas() 
-//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
-//  addFrutas() 
-//  var addfruta = window.prompt("Qual fruta você quer adicionar?") 
-//  addFrutas() 
- 
-//  alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`) 
+ function fruta(){
+    var fruta1 = window.prompt("Qual fruta você quer adicionar?") ;
+    frutas.push(fruta1); 
+    var fruta2 = window.prompt("Qual fruta você quer adicionar?"); 
+    frutas.push(fruta2); 
+    var fruta3 = window.prompt("Qual fruta você quer adicionar?"); 
+    frutas.push(fruta3); 
+    
+    alert(`Você adicionou ${frutas[0]}, ${frutas[1]} e ${frutas[2]} a sua lista.`) 
+ }
  
 // --------------------------------------------------------------------------------
 
