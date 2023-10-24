@@ -62,8 +62,8 @@ function calculaIdade()
 // --------------------------------------------------------------------------------
 
 function cont(){
-    numInit = 0
-    var numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
+    let numInit = 0
+    let numFim = Number(window.prompt("Até qual número você quer que eu exiba?"))
         if (numFim <= 1){
             alert("Digite um numero válido.")
         } else {
